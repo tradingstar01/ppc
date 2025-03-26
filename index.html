@@ -44,6 +44,11 @@
             padding: 20px;
             margin-top: 20px;
         }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
     </style>
 </head>
 <body>
@@ -55,13 +60,13 @@
     <section id="about">
         <h2>About Me</h2>
         <p>Introduce yourself, your background, and why you are running for office.</p>
-        <img src="your-image.jpg" alt="Ivan Milivojevic Campaign Photo" width="300">
+        <img src="images/ivan-milivojevic.jpg" alt="Ivan Milivojevic Campaign Photo">
     </section>
     
     <section id="platform">
         <h2>My Platform</h2>
         <p>List key policy issues you support and your stance on them.</p>
-        <a href="your-policy-document.pdf" target="_blank">Download My Policy Plan</a>
+        <a href="docs/ivan-policy-document.pdf" target="_blank">Download My Policy Plan</a>
     </section>
     
     <section id="get-involved">
@@ -72,10 +77,10 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <p>Email: <a href="mailto:ivan.milivojevic@teamppc.ca">ivan.milivojevic@teamppc.ca</a></p>
-        <form class="contact-form">
-            <input type="text" placeholder="Your Name" required><br>
-            <input type="email" placeholder="Your Email" required><br>
-            <textarea placeholder="Your Message" rows="5" required></textarea><br>
+        <form class="contact-form" action="https://formspree.io/f/your-form-id" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required><br>
+            <input type="email" name="email" placeholder="Your Email" required><br>
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea><br>
             <button type="submit">Send Message</button>
         </form>
     </section>
@@ -86,3 +91,4 @@
     </footer>
 </body>
 </html>
+
